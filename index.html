@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f6f8fa;
+        }
+        h1 { color: #24292f; }
+        .links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .video-btn { background-color: #ff0000; } /* 视频通常用红色标识 */
+        .kernel-btn { background-color: #2f363d; } /* 内核/GitHub 风格用深色 */
+        .btn:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <h1>你好，我是syj</h1>
+    <p>欢迎来到我的个人主页</p>
+
+    <div class="links">
+        <a href="video.html" class="btn video-btn">🎬 我的介绍视频</a>
+        <a href="commitss.html" class="btn kernel-btn" target="_blank">🐧 我的 Linux Kernel Commits</a>
+    </div>
+
+</body>
+</html>
