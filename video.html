@@ -6,14 +6,36 @@
     <style>
         body { background: #000; color: #fff; text-align: center; font-family: sans-serif; }
         video { max-width: 90%; margin-top: 50px; border: 2px solid #444; }
-        .back-link { display: block; margin-top: 20px; color: #aaa; text-decoration: none; }
+        
+        /* 新增资源链接样式 */
+        .resources { margin-top: 30px; }
+        .resources a { 
+            color: #00aaff; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            padding: 8px 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .resources a:hover { background: #222; }
+
+        .back-link { display: block; margin-top: 40px; color: #aaa; text-decoration: none; font-size: 0.9em; }
     </style>
 </head>
 <body>
+
     <video controls autoplay>
         <source src="intro.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频。
     </video>
+
+    <div class="resources">
+        <a href="paper.pdf" target="_blank">📄 查看/下载 PDF 说明文档</a>
+        <a href="https://link.springer.com/article/10.1007/s12650-022-00887-y" target="_blank">🌐 访问library</a>
+    </div>
+
     <a href="index.html" class="back-link">← 返回主页</a>
+
 </body>
 </html>
